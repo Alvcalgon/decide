@@ -89,7 +89,7 @@ class Voting(models.Model):
                 response=True)
 
         if response.status_code != 200:
-            # TODO: manage error
+            # TODO: manage error, but how?
             pass
 
         self.tally = response.json()
