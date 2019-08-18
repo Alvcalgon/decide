@@ -80,7 +80,7 @@ class Voting(models.Model):
         response = mods.post('mixnet', entry_point=shuffle_url, baseurl=auth.url, json=data,
                 response=True)
         if response.status_code != 200:
-            # TODO: manage error
+            # TODO: manage error. We must must show an error page.
             pass
 
         # then, we can decrypt that
