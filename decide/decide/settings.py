@@ -68,12 +68,9 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'https://git.heroku.com/egc-practica-heroku.git/'
+BASEURL = 'https://egc-practica-heroku.herokuapp.com/'
 
 APIS = {}
-
-import django_heroku
-django_heroku.settings(locals())
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -163,5 +160,7 @@ try:
 except ImportError:
     print("local_settings.py not found")
 
-
+import django_heroku
+django_heroku.settings(locals())
+	
 INSTALLED_APPS = INSTALLED_APPS + MODULES
