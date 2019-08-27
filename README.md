@@ -94,5 +94,3 @@ Lanzar tests:
 Lanzar una consola SQL:
 
     $ docker exec -ti decide_db ash -c "su - postgres -c 'psql postgres'"
-    
-[![Build Status](https://travis-ci.org/Alvcalgon/decide.svg?branch=master)](https://travis-ci.org/Alvcalgon/decide)
